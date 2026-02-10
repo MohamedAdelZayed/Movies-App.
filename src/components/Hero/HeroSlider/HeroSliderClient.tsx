@@ -40,7 +40,7 @@ export default function HeroSliderClient({ allTrend }: { allTrend: MediaItemType
   <Swiper
     modules={[Autoplay, EffectFade]}
     effect="fade"
-    autoplay={{ delay: 2500, disableOnInteraction: false }}
+    autoplay={{ delay: 3500, disableOnInteraction: false }}
     loop={allTrend?.length > 1}
     onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
     onSwiper={(swiper) => setSwiperInstance(swiper)}
@@ -111,7 +111,7 @@ export default function HeroSliderClient({ allTrend }: { allTrend: MediaItemType
                   setSelectedMedia(item);
                   setShowModal(true);
                 }}
-                className="mt-4 bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold hover:bg-yellow-500 transition text-sm"
+                className="mt-4 bg-yellow-400 cursor-pointer text-black px-5 py-2 rounded-full font-semibold hover:bg-yellow-500 transition text-sm"
               >
                 ▶ Watch Trailer
               </button>

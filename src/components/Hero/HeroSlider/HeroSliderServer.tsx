@@ -10,11 +10,11 @@ export default async function HeroSliderServer() {
   // Fetch Trending Movies/Series on the server with caching
   const res = await fetch(
     `https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}`,
-    { next: { revalidate: 3600000000 } } 
+    { next: { revalidate: 36000000000000 } } 
   );
   const data: TrendingResponseType = await res.json();
 
-const trendingItems = data?.results?.slice(13,18) || [];
+const trendingItems = data?.results?.slice(3,7) || [];
 
   // fetch runtime for movies
   const allTrend: MediaItemType[] = await Promise.all(
