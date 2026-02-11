@@ -84,12 +84,12 @@ export default function HeroSliderClient({ allTrend }: { allTrend: MediaItemType
 
               <div className="max-w-[85%] sm:max-w-full">
   <p className="block sm:hidden text-xs mt-2 leading-5 pl-0.5">
-    {truncateOverview(item.overview, 25)}
+    {truncateOverview(item.overview, 34)}
   </p>
 
   <p className="hidden sm:block text-xs sm:text-sm md:text-base lg:text-lg mt-2 sm:mt-3 line-clamp-4 sm:leading-5 md:leading-6 lg:leading-7 pl-0.5">
     {/* {item.overview} */}
-    {truncateOverview(item.overview, 40)}
+    {truncateOverview(item.overview, 55)}
   </p>
 </div>
 

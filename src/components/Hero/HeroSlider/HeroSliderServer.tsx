@@ -14,7 +14,7 @@ export default async function HeroSliderServer() {
   );
   const data: TrendingResponseType = await res.json();
 
-const trendingItems = data?.results?.slice(3,7) || [];
+const trendingItems = data?.results?.slice(13,17) || [];
 
   // fetch runtime for movies
   const allTrend: MediaItemType[] = await Promise.all(
